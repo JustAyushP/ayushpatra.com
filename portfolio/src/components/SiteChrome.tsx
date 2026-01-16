@@ -64,6 +64,31 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
       <main className="mx-auto max-w-6xl px-6 pt-24">{children}</main>
 
       <SocialDock />
+      
+      {/* Resume Download Button - Bottom Right */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="/Resume.pdf"
+          download="Ayush_Patra_Resume.pdf"
+          className="group relative flex items-center gap-2 px-5 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white hover:bg-white/20 hover:border-white/30 transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+            />
+          </svg>
+          <span className="text-sm font-medium">Resume</span>
+        </a>
+      </div>
     </div>
   );
 }

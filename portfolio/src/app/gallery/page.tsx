@@ -32,9 +32,11 @@ export default function GalleryPage() {
             <div className="relative z-10 h-full">
                 {/* Left side text */}
                 <div className="absolute left-12 top-1/2 -translate-y-1/2 z-20 max-w-[240px]">
-                    <p className="text-white font-mono text-base md:text-lg leading-relaxed tracking-wider opacity-90">
-                        I love taking photos and documenting my life! These are just a few photos that I'm proud of!
-                    </p>
+                    <div className="backdrop-blur-sm bg-black/20 rounded-xl px-4 py-3 border border-white/10">
+                        <p className="text-white font-medium text-base md:text-lg leading-relaxed tracking-normal drop-shadow-lg">
+                            I love taking photos and documenting my life! These are just a few photos that I'm proud of!
+                        </p>
+                    </div>
                 </div>
                 <GalleryCanvas images={images} />
             </div>
