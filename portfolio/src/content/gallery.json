@@ -1,0 +1,98 @@
+[
+    {
+      "id": "sf-01",
+      "src": "https://assets.ayushpatra.com/gallery/sanfrancisco-1.jpeg",
+      "title": "Streets of San Francisco",
+      "date": "2025-08-22",
+      "location": "San Francisco",
+      "tags": ["street"]
+    },
+    {
+        "id": "me-01",
+        "src": "https://assets.ayushpatra.com/gallery/me-school-1.JPG",
+        "title": "Me at school",
+        "date": "2024-06-28",
+        "location": "Bhubaneswar",
+        "tags": ["me"]
+    },
+    {
+      "id": "travel-01",
+      "src": "https://assets.ayushpatra.com/gallery/plane-view-1.jpeg",
+      "title": "Travel",
+      "date": "2024-06-13",
+      "location": "Tamil Nadu",
+      "tags": ["travel"]
+    },
+    {
+      "id": "bird-01",
+      "src": "https://assets.ayushpatra.com/gallery/bird.JPG",
+      "title": "Bird",
+      "date": "2024-01-01",
+      "location": "Unknown",
+      "tags": ["nature", "wildlife"]
+    },
+    {
+      "id": "boat-01",
+      "src": "https://assets.ayushpatra.com/gallery/boat.JPG",
+      "title": "Boat",
+      "date": "2024-01-01",
+      "location": "Unknown",
+      "tags": ["travel", "water"]
+    },
+    {
+      "id": "elephant-01",
+      "src": "https://assets.ayushpatra.com/gallery/elephant.JPG",
+      "title": "Elephant",
+      "date": "2024-01-01",
+      "location": "Unknown",
+      "tags": ["wildlife", "nature"]
+    },
+    {
+      "id": "gang-01",
+      "src": "https://assets.ayushpatra.com/gallery/gang.jpg",
+      "title": "Gang",
+      "date": "2024-01-01",
+      "location": "Unknown",
+      "tags": ["people", "friends"]
+    },
+    {
+      "id": "goldengate-01",
+      "src": "https://assets.ayushpatra.com/gallery/goldengate.jpeg",
+      "title": "Golden Gate Bridge",
+      "date": "2024-01-01",
+      "location": "San Francisco",
+      "tags": ["landmark", "san francisco"]
+    },
+    {
+      "id": "salt-01",
+      "src": "https://assets.ayushpatra.com/gallery/salt.jpeg",
+      "title": "Salt",
+      "date": "2024-01-01",
+      "location": "Unknown",
+      "tags": ["nature", "landscape"]
+    },
+    {
+      "id": "sf-home-01",
+      "src": "https://assets.ayushpatra.com/gallery/sf-home.jpeg",
+      "title": "San Francisco Home",
+      "date": "2024-01-01",
+      "location": "San Francisco",
+      "tags": ["san francisco", "home"]
+    },
+    {
+      "id": "toronto-skyline-01",
+      "src": "https://assets.ayushpatra.com/gallery/toronto-skyline.jpeg",
+      "title": "Toronto Skyline",
+      "date": "2024-01-01",
+      "location": "Toronto",
+      "tags": ["city", "skyline", "toronto"]
+    },
+    {
+      "id": "waterloo-carnival-01",
+      "src": "https://assets.ayushpatra.com/gallery/waterloo-carnival.jpeg",
+      "title": "Waterloo Carnival",
+      "date": "2024-01-01",
+      "location": "Waterloo",
+      "tags": ["event", "carnival", "waterloo"]
+    }
+  ]
