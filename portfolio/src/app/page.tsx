@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useEffect } from "react";
 import homeData from "../content/home.json";
 import Aurora from '../components/Aurora';
-import FluidGlass from '../components/FluidGlass';
 
 
 type HomeCTA = { label: string; href: string };
@@ -80,9 +79,6 @@ export default function Home() {
             ))}
           </div>
         )}
-      </div>
-      
-      <div className="absolute inset-0 z-5" style={{ height: '600px', position: 'relative' }}>
       </div>
     </div>
   );
