@@ -45,7 +45,7 @@ const items = [
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
+    <div className="min-h-screen bg-transparent text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
       <header className="fixed left-0 right-0 top-0 z-50 w-full">
         <BubbleMenu
             logo={<span style={{ fontWeight: 700, fontSize: '1.25rem' }}>Ayush Patra.</span>}

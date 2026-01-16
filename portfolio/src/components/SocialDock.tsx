@@ -1,27 +1,50 @@
+import Image from "next/image";
+import githubIcon from "./assets/github.png";
+import linkedinIcon from "./assets/linkedin.png";
+import gmailIcon from "./assets/gmail.png";
+
 export function SocialDock() {
     return (
-      <div className="fixed bottom-6 left-6 flex gap-4 text-sm ">
+      <div className="fixed bottom-6 left-6 flex items-center gap-4 text-sm z-50">
         <a
           href="https://github.com/JustAyushP"
           target="_blank"
           rel="noreferrer"
-          className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+          className="opacity-60 hover:opacity-100 transition-opacity"
         >
-          GitHub
+          <Image
+            src={githubIcon}
+            alt="GitHub"
+            width={36}
+            height={36}
+            className="w-9 h-9 object-contain"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/apatra07/"
           target="_blank"
           rel="noreferrer"
-          className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+          className="opacity-60 hover:opacity-100 transition-opacity"
         >
-          LinkedIn
+          <Image
+            src={linkedinIcon}
+            alt="LinkedIn"
+            width={36}
+            height={36}
+            className="w-9 h-9 object-contain"
+          />
         </a>
         <a
           href="mailto:your-email@example.com"
-          className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+          className="opacity-60 hover:opacity-100 transition-opacity"
         >
-          Email
+          <Image
+            src={gmailIcon}
+            alt="Email"
+            width={36}
+            height={36}
+            className="w-9 h-9 object-contain"
+          />
         </a>
       </div>
     );
