@@ -1,0 +1,22 @@
+{
+  "scrollText": "Hi, I'm Ayush — a first year CS student at the University of Waterloo. I love F1, playing drums and solving problems. I travel to a new country every year, and I'm always chasing whatever excites me next. Let's connect.",
+  "photo": "https://via.placeholder.com/400x500.png?text=Your+Photo",
+  "education": {
+    "school": "University of Waterloo",
+    "program": "Computer Science",
+    "year": "First Year"
+  },
+  "location": "Waterloo, ON",
+  "techStack": ["TypeScript", "C++", "C", "React", "Next.js", "Python", "Node.js", "Tailwind CSS", "Git", "Bash", "MongoDB", "Cloudflare"],
+  "hobbies": ["Filmmaking", "Photography", "Traveling", "Music", "Coding", "Drums"],
+  "funFact": "I can name every country on a blank map.",
+  "countriesTravelled": 6,
+  "quote": "The best way to predict the future is to invent it.",
+  "quoteAuthor": "Alan Kay",
+  "currently": "Looking for internships for summer 2026",
+  "socials": {
+    "github": "https://github.com/JustAyushP",
+    "linkedin": "https://linkedin.com/in/ayushpatra",
+    "email": "ayushkiit1234@gmail.com"
+  }
+}

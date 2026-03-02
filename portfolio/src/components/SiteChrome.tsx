@@ -12,7 +12,7 @@ const items = [
   },
   {
     label: 'about',
-    href: '#',
+    href: '/about',
     ariaLabel: 'About',
     rotation: 8,
     hoverStyles: { bgColor: '#10b981', textColor: '#ffffff' }
