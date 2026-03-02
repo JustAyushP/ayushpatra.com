@@ -18,9 +18,9 @@ const items = [
     hoverStyles: { bgColor: '#10b981', textColor: '#ffffff' }
   },
   {
-    label: 'projects',
-    href: '#',
-    ariaLabel: 'Projects',
+    label: 'music',
+    href: '/music',
+    ariaLabel: 'Music',
     rotation: 8,
     hoverStyles: { bgColor: '#f59e0b', textColor: '#ffffff' }
   },
@@ -32,9 +32,9 @@ const items = [
     hoverStyles: { bgColor: '#ef4444', textColor: '#ffffff' }
   },
   {
-    label: 'contact',
-    href: '#',
-    ariaLabel: 'Contact',
+    label: 'travel',
+    href: '/travel',
+    ariaLabel: 'Travel',
     rotation: -8,
     hoverStyles: { bgColor: '#8b5cf6', textColor: '#ffffff' }
   }

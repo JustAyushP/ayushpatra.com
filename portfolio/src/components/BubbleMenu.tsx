@@ -46,7 +46,7 @@ const DEFAULT_ITEMS: MenuItem[] = [
     hoverStyles: { bgColor: '#10b981', textColor: '#ffffff' }
   },
   {
-    label: 'projects',
+    label: 'music',
     href: '#',
     ariaLabel: 'Documentation',
     rotation: 8,
@@ -60,7 +60,7 @@ const DEFAULT_ITEMS: MenuItem[] = [
     hoverStyles: { bgColor: '#ef4444', textColor: '#ffffff' }
   },
   {
-    label: 'contact',
+    label: 'travel',
     href: '#',
     ariaLabel: 'Contact',
     rotation: -8,
