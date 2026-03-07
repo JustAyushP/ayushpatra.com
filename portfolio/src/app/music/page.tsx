@@ -215,10 +215,11 @@ export default function MusicPage() {
         }
 
         .section-label {
-          font-size: 0.7rem;
+          font-size: 1.1rem;
           text-transform: uppercase;
-          letter-spacing: 0.2em;
-          color: rgba(255, 255, 255, 0.3);
+          letter-spacing: 0.15em;
+          color: rgba(255, 255, 255, 0.5);
+          font-weight: 600;
           margin-bottom: 16px;
         }
 
@@ -390,7 +391,7 @@ export default function MusicPage() {
 
         {/* Top Artists */}
         <div className="max-w-[960px] mx-auto mt-12">
-          <p className="section-label">Top Artists</p>
+          <p className="section-label">Top Artists This Month</p>
           <div className="artists-grid">
             {music.topArtists.map((artist, i) => (
               <ArtistCard key={i} artist={artist} index={i} />

@@ -1,13 +1,13 @@
 {
-  "scrollText": "Hi, I'm Ayush — a first year CS student at the University of Waterloo. I love F1, playing drums and solving problems. I travel to a new country every year, and I'm always chasing whatever excites me next. Let's connect.",
-  "photo": "https://via.placeholder.com/400x500.png?text=Your+Photo",
+  "scrollText": "Hi, I'm Ayush, a first year CS student at the University of Waterloo. I love F1, playing drums and solving problems. I travel to a new country every year, and I'm always chasing whatever excites me next. Let's connect.",
+  "photo": "https://assets.ayushpatra.com/gallery/me-school-1.JPG",
   "education": {
     "school": "University of Waterloo",
     "program": "Computer Science",
     "year": "First Year"
   },
   "location": "Waterloo, ON",
-  "techStack": ["TypeScript", "C++", "C", "React", "Next.js", "Python", "Node.js", "Tailwind CSS", "Git", "Bash", "MongoDB", "Cloudflare"],
+  "techStack": ["TypeScript", "Python", "C++", "C", "React", "Next.js", "FastAPI", "Flask", "Node.js", "PyTorch", "MongoDB", "Tailwind CSS", "FFmpeg", "Git", "Bash", "Cloudflare"],
   "hobbies": ["Filmmaking", "Photography", "Traveling", "Music", "Coding", "Drums"],
   "funFact": "I can name every country on a blank map.",
   "countriesTravelled": 6,
@@ -18,5 +18,47 @@
     "github": "https://github.com/JustAyushP",
     "linkedin": "https://linkedin.com/in/ayushpatra",
     "email": "ayushkiit1234@gmail.com"
-  }
+  },
+  "showExperience": false,
+  "experience": [
+    {
+      "role": "Software Engineer Intern",
+      "company": "Company Name",
+      "companyUrl": "https://example.com",
+      "date": "May 2026 – Aug 2026",
+      "description": "Describe what you worked on and the impact you made.",
+      "tags": ["React", "TypeScript", "Node.js"]
+    }
+  ],
+  "showProjects": true,
+  "projects": [
+    {
+      "name": "CXR: AI Chest X-Ray Assistant",
+      "description": "Trained a ResNet50 chest X-ray classifier on ~20k images achieving ~80% F1 optimized for ~90% recall. Built a full-stack clinical triage app with a Next.js physician UI and FastAPI inference endpoints, with deterministic logic and schema-constrained outputs.",
+      "tags": ["PyTorch", "ResNet50", "FastAPI", "Next.js", "TypeScript"],
+      "url": "",
+      "github": "https://github.com/JustAyushP/cxr-triage"
+    },
+    {
+      "name": "Unmute: Spotify Analytics Platform",
+      "description": "Full-stack Spotify analytics dashboard extending Wrapped with custom time-range recaps, audio-feature profiling, and trend visualizations. Implemented OAuth 2.0 with token rotation and batched requests across 5+ Spotify endpoints with retry/backoff logic.",
+      "tags": ["Next.js", "React", "TypeScript", "Flask", "MongoDB"],
+      "url": "",
+      "github": "https://github.com/JustAyushP/Unmute"
+    },
+    {
+      "name": "ClipCraft: Automated Video Clipper",
+      "description": "Automated video clipping pipeline using scene-change detection to extract clips from long-form footage. FFmpeg-based workflow for trimming, concatenation, and encoding with configurable presets for clip length and export quality.",
+      "tags": ["Python", "FFmpeg"],
+      "url": "",
+      "github": "https://github.com/JustAyushP/ClipCraft"
+    },
+    {
+      "name": "Personal Website: ayushpatra.com",
+      "description": "Designed and built a fully custom portfolio with shader-based Aurora backgrounds, a typewriter landing page, scroll-reveal text animations, and a Spotify-integrated music page. Features an interactive travel map, photo gallery, and bento-grid about section, all statically exported for fast load times.",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "WebGL", "Cloudflare"],
+      "url": "https://ayushpatra.com",
+      "github": "https://github.com/JustAyushP/personalwebsite"
+    }
+  ]
 }

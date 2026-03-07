@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { SocialDock } from "./SocialDock";
 import BubbleMenu from "./BubbleMenu";
 
@@ -44,11 +47,22 @@ const items = [
 
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+
   return (
     <div className="min-h-screen bg-transparent text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
       <header className="fixed left-0 right-0 top-0 z-50 w-full">
         <BubbleMenu
             logo={<span style={{ fontWeight: 700, fontSize: '1.25rem' }}>Ayush Patra.</span>}
+            logoTrailing={pathname === "/about" ? (
+              <Link
+                href="/"
+                className="inline-flex items-center gap-2 pt-2 text-sm text-white/50 hover:text-white/90 transition-colors -translate-x-1"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Home
+              </Link>
+            ) : undefined}
             items={items}
             menuAriaLabel="Toggle navigation"
             menuBg="#ffffff"
@@ -61,7 +75,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Page content gets pushed down so it doesn't sit under the fixed header */}
-      <main className="mx-auto max-w-6xl px-6 pt-24">{children}</main>
+      <main className="mx-auto max-w-6xl px-6 pt-20">{children}</main>
 
       <SocialDock />
       

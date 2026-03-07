@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState, useRef, useCallback } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import homeData from "../content/home.json";
 import musicData from "../content/music.json";
 import aboutData from "../content/about.json";
@@ -98,10 +99,12 @@ export default function Home() {
   const headline = home.headline ?? "Ayush Patra.";
   const { displayed, done } = useTypewriter(headline, 90, 300);
 
+  const router = useRouter();
   const [emailCopied, setEmailCopied] = useState(false);
   const [konamiActive, setKonamiActive] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [loaded, setLoaded] = useState(false);
+  const [navigating, setNavigating] = useState(false);
 
   // Page load blur-in
   useEffect(() => {
@@ -221,9 +224,9 @@ export default function Home() {
         className="fixed inset-0 flex items-center justify-center bg-black"
         style={{
           zIndex: 1,
-          opacity: loaded ? 1 : 0,
-          filter: loaded ? "blur(0px)" : "blur(12px)",
-          transition: "opacity 0.8s ease, filter 0.8s ease",
+          opacity: loaded && !navigating ? 1 : 0,
+          filter: loaded && !navigating ? "blur(0px)" : "blur(12px)",
+          transition: "opacity 0.6s ease, filter 0.6s ease",
         }}
       >
         <div className="absolute inset-0 z-0 w-screen h-screen">
@@ -259,6 +262,17 @@ export default function Home() {
           <p className="mt-3 text-white/30 text-sm">
             Currently: {aboutData.currently}
           </p>
+
+          <button
+            onClick={() => {
+              setNavigating(true);
+              setTimeout(() => router.push("/about"), 600);
+            }}
+            className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white/70 text-sm font-medium hover:bg-white/10 hover:text-white hover:border-white/40 transition-all duration-300 backdrop-blur-sm cursor-pointer"
+          >
+            About Me
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
         </div>
 
         {/* Bottom row */}
