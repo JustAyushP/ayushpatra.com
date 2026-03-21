@@ -1,0 +1,47 @@
+{
+  "spotifyProfileUrl": "https://open.spotify.com/user/m30k4lqkugdktwdbe26t0fle7",
+  "blurb": "Music is the soundtrack to everything I do. Whether I'm coding, traveling, or just unwinding — there's always something playing. Here's what I've been listening to lately.",
+  "featuredSong": {
+    "name": "dancinwithsomebawdy",
+    "artist": "ericdoa",
+    "albumArt": "https://i.scdn.co/image/ab67616d0000b2731c615ec4f5dd17806a802162",
+    "spotifyUrl": "https://open.spotify.com/track/5v7oj9PosKdE39x9uwDs6C"
+  },
+  "topTracks": [
+    {
+      "name": "Pyari Amaanat",
+      "artist": "Arpit Bala, A.O.D., Angad Virk",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b273bc52b9838ebcfae5646a5457",
+      "spotifyUrl": "https://open.spotify.com/track/2W5VC6Rgb8LONHLW8iIYeK"
+    },
+    {
+      "name": "Asheville",
+      "artist": "glaive",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b27394b223f2f8e73e1102b27994",
+      "spotifyUrl": "https://open.spotify.com/track/2ADqYnaKJBkwbaps9pu2k2"
+    },
+    {
+      "name": "Gal Sun",
+      "artist": "Sabat Batin, Rackstar",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b2736e005f238ab77c3a483b8c4b",
+      "spotifyUrl": "https://open.spotify.com/track/0DCmf7066T5DAjiF8uahv1"
+    }
+  ],
+  "topArtists": [
+    {
+      "name": "glaive",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebbd09e61276a442f8c61f85b4",
+      "spotifyUrl": "https://open.spotify.com/artist/4cJKDGSv4Dz9QycXYmo565"
+    },
+    {
+      "name": "Pritam",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca",
+      "spotifyUrl": "https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"
+    },
+    {
+      "name": "The Kid LAROI",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb8ae6a1046094624d95b115cb",
+      "spotifyUrl": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
+    }
+  ]
+}

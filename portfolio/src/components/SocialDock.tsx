@@ -1,7 +1,6 @@
 import Image from "next/image";
 import githubIcon from "./assets/github.png";
 import linkedinIcon from "./assets/linkedin.png";
-import gmailIcon from "./assets/gmail.png";
 
 export function SocialDock() {
     return (
@@ -29,18 +28,6 @@ export function SocialDock() {
           <Image
             src={linkedinIcon}
             alt="LinkedIn"
-            width={36}
-            height={36}
-            className="w-9 h-9 object-contain"
-          />
-        </a>
-        <a
-          href="mailto:your-email@example.com"
-          className="opacity-60 hover:opacity-100 transition-opacity"
-        >
-          <Image
-            src={gmailIcon}
-            alt="Email"
             width={36}
             height={36}
             className="w-9 h-9 object-contain"

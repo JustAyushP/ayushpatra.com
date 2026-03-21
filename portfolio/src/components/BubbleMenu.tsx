@@ -17,6 +17,7 @@ type MenuItem = {
 
 export type BubbleMenuProps = {
   logo: ReactNode | string;
+  logoTrailing?: ReactNode;
   onMenuClick?: (open: boolean) => void;
   className?: string;
   style?: CSSProperties;
@@ -46,7 +47,7 @@ const DEFAULT_ITEMS: MenuItem[] = [
     hoverStyles: { bgColor: '#10b981', textColor: '#ffffff' }
   },
   {
-    label: 'projects',
+    label: 'music',
     href: '#',
     ariaLabel: 'Documentation',
     rotation: 8,
@@ -60,7 +61,7 @@ const DEFAULT_ITEMS: MenuItem[] = [
     hoverStyles: { bgColor: '#ef4444', textColor: '#ffffff' }
   },
   {
-    label: 'contact',
+    label: 'travel',
     href: '#',
     ariaLabel: 'Contact',
     rotation: -8,
@@ -70,6 +71,7 @@ const DEFAULT_ITEMS: MenuItem[] = [
 
 export default function BubbleMenu({
   logo,
+  logoTrailing,
   onMenuClick,
   className,
   style,
@@ -96,7 +98,7 @@ export default function BubbleMenu({
     useFixedPosition ? 'fixed' : 'absolute',
     'left-0 right-0 top-0',
     'flex items-center justify-between',
-    'gap-4 px-12 py-10',
+    'gap-3 px-8 py-6',
     'pointer-events-none',
     'z-[1001]',
     className
@@ -211,7 +213,7 @@ export default function BubbleMenu({
         }
         @media (max-width: 899px) {
           .bubble-menu-items {
-            padding-top: 120px;
+            padding-top: 100px;
             align-items: flex-start;
           }
           .bubble-menu-items .pill-list {
@@ -223,9 +225,9 @@ export default function BubbleMenu({
             overflow: visible;
           }
           .bubble-menu-items .pill-link {
-            font-size: clamp(1.2rem, 3vw, 4rem);
-            padding: clamp(1rem, 2vw, 2rem) 0;
-            min-height: 80px !important;
+            font-size: clamp(1rem, 2.5vw, 2.5rem);
+            padding: clamp(0.75rem, 1.5vw, 1.5rem) 0;
+            min-height: 60px !important;
           }
           .bubble-menu-items .pill-link:hover {
             transform: scale(1.06);
@@ -239,25 +241,26 @@ export default function BubbleMenu({
       `}</style>
 
       <nav className={containerClassName} style={style} aria-label="Main navigation">
-        <Link
-          href="/"
-          className={[
-            'bubble logo-bubble',
+        <div className="flex flex-col items-center gap-1 pointer-events-auto">
+          <Link
+            href="/"
+            className={[
+              'bubble logo-bubble',
             'inline-flex items-center justify-center',
             'rounded-full',
             'bg-white',
             'shadow-[0_4px_16px_rgba(0,0,0,0.12)]',
             'pointer-events-auto',
-            'h-12 md:h-14',
-            'px-4 md:px-8',
+            'h-10 md:h-12',
+            'px-3 md:px-6',
             'gap-2',
             'will-change-transform',
             'no-underline'
           ].join(' ')}
           aria-label="Logo"
-          style={{
-            background: menuBg,
-            minHeight: '48px',
+            style={{
+              background: menuBg,
+              minHeight: '40px',
             borderRadius: '9999px'
           }}
         >
@@ -276,7 +279,9 @@ export default function BubbleMenu({
               logo
             )}
           </span>
-        </Link>
+          </Link>
+          {logoTrailing}
+        </div>
 
         <button
           type="button"
@@ -288,7 +293,7 @@ export default function BubbleMenu({
             'bg-white',
             'shadow-[0_4px_16px_rgba(0,0,0,0.12)]',
             'pointer-events-auto',
-            'w-12 h-12 md:w-14 md:h-14',
+            'w-10 h-10 md:w-12 md:h-12',
             'border-0 cursor-pointer p-0',
             'will-change-transform'
           ].join(' ')}
@@ -300,7 +305,7 @@ export default function BubbleMenu({
           <span
             className="menu-line block mx-auto rounded-[2px]"
             style={{
-              width: 26,
+              width: 22,
               height: 2,
               background: menuContentColor,
               transform: isMenuOpen ? 'translateY(4px) rotate(45deg)' : 'none'
@@ -309,8 +314,8 @@ export default function BubbleMenu({
           <span
             className="menu-line short block mx-auto rounded-[2px]"
             style={{
-              marginTop: '6px',
-              width: 26,
+              marginTop: '5px',
+              width: 22,
               height: 2,
               background: menuContentColor,
               transform: isMenuOpen ? 'translateY(-4px) rotate(-45deg)' : 'none'
@@ -336,7 +341,7 @@ export default function BubbleMenu({
             className={[
               'pill-list',
               'list-none m-0 px-6',
-              'w-full max-w-[1600px] mx-auto',
+              'w-full max-w-[1100px] mx-auto',
               'flex flex-wrap',
               'gap-x-0 gap-y-1',
               'pointer-events-auto'
@@ -387,9 +392,9 @@ export default function BubbleMenu({
                       ['--hover-color']: item.hoverStyles?.textColor || menuContentColor,
                       background: 'var(--pill-bg)',
                       color: 'var(--pill-color)',
-                      minHeight: 'var(--pill-min-h, 160px)',
-                      padding: 'clamp(1.5rem, 3vw, 8rem) 0',
-                      fontSize: 'clamp(1.5rem, 4vw, 4rem)',
+                      minHeight: 'var(--pill-min-h, 120px)',
+                      padding: 'clamp(1rem, 2vw, 4rem) 0',
+                      fontSize: 'clamp(1.2rem, 3vw, 2.5rem)',
                       fontWeight: 400,
                       lineHeight: 0,
                       willChange: 'transform',
