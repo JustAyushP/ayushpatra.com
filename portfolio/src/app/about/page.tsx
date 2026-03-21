@@ -404,6 +404,17 @@ export default function AboutPage() {
           gap: 14px;
           overflow: hidden;
         }
+        .project-card.featured {
+          grid-column: 1 / -1;
+          padding: 36px 40px;
+        }
+        .project-card.featured .project-name {
+          font-size: 1.4rem;
+        }
+        .project-card.featured .project-desc {
+          font-size: 0.9rem;
+          max-width: 720px;
+        }
         .project-card::before {
           content: '';
           position: absolute;
@@ -428,14 +439,7 @@ export default function AboutPage() {
           box-shadow: 0 12px 40px rgba(var(--accent), 0.08);
         }
 
-        .project-index {
-          font-size: 0.7rem;
-          font-weight: 700;
-          letter-spacing: 0.15em;
-          color: rgba(var(--accent), 0.3);
-          font-variant-numeric: tabular-nums;
-          transition: color 0.3s ease;
-        }
+        
 
         .project-name {
           font-size: 1.15rem;
@@ -510,9 +514,18 @@ export default function AboutPage() {
             <h1 className="hero-title font-semibold tracking-tight" style={{ fontSize: 'clamp(3rem, 8vw, 6rem)' }}>
               About Me
             </h1>
-            <svg className="w-5 h-5 text-white/20 animate-bounce" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+            <button
+              onClick={() => {
+                const target = document.querySelector('.scroll-section');
+                target?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors cursor-pointer"
+              aria-label="Scroll down"
+            >
+              <svg className="w-5 h-5 text-white/20 animate-bounce" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
           </div>
         </div>
         <div className="scroll-section">
@@ -553,9 +566,8 @@ export default function AboutPage() {
             >
               <div>
                 <p className="bento-label">Education</p>
-                <p className="bento-value">{aboutData.education.program}</p>
-                <p className="text-sm text-white/50 mt-1">{aboutData.education.school}</p>
-                <p className="text-xs text-white/30 mt-1">{aboutData.education.year}</p>
+                <p className="text-[1.25rem] font-semibold text-white/90">{aboutData.education.school}</p>
+                <p className="text-sm text-white/50 mt-1">{aboutData.education.program} · {aboutData.education.year}</p>
               </div>
             </div>
 
@@ -567,9 +579,8 @@ export default function AboutPage() {
             >
               <div>
                 <p className="bento-label">Currently</p>
-                <p className="bento-value">{aboutData.currently}</p>
+                <p className="text-[1.2rem] font-semibold text-white/90 leading-snug">{aboutData.currently}</p>
               </div>
-              <span className="text-3xl mt-2">⚡</span>
             </div>
 
             <div
@@ -610,8 +621,8 @@ export default function AboutPage() {
               onMouseLeave={() => handleCardMouseLeave(5)}
             >
               <div>
-                <p className="bento-value italic leading-relaxed">&ldquo;{aboutData.quote}&rdquo;</p>
-                <p className="text-sm text-white/40 mt-3">— {aboutData.quoteAuthor}</p>
+                <p className="text-[0.95rem] italic leading-relaxed text-white/70">&ldquo;{aboutData.quote}&rdquo;</p>
+                <p className="text-xs text-white/30 mt-3">— {aboutData.quoteAuthor}</p>
               </div>
             </div>
 
@@ -667,7 +678,6 @@ export default function AboutPage() {
             >
               <p className="bento-label">Fun Fact</p>
               <div className="flex items-center gap-2">
-                <span className="text-xl">🤓</span>
                 <p className="bento-value text-sm">{aboutData.funFact}</p>
               </div>
             </div>
@@ -684,7 +694,7 @@ export default function AboutPage() {
                 <span className="text-6xl font-bold text-white/90 leading-none">{aboutData.countriesTravelled}</span>
                 <span className="text-white/40 text-xs ml-2 mb-0.5">and counting →</span>
               </div>
-              <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[5rem] leading-none opacity-[0.08] group-hover:opacity-[0.15] transition-opacity pointer-events-none select-none">🌍</span>
+              
             </Link>
           </div>
         </div>
@@ -698,14 +708,17 @@ export default function AboutPage() {
               {aboutData.experience.map((exp, i) => (
                 <div key={i} className="timeline-item">
                   <div className="timeline-dot" />
-                  <p className="timeline-role">{exp.role}</p>
+                  <p className="timeline-role">
+                    {exp.role}
+                    {exp.incoming && <span className="incoming-badge">Incoming</span>}
+                  </p>
                   {exp.companyUrl ? (
                     <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="timeline-company">{exp.company} ↗</a>
                   ) : (
                     <p className="timeline-company">{exp.company}</p>
                   )}
                   <p className="timeline-date">{exp.date}</p>
-                  <p className="timeline-desc">{exp.description}</p>
+                  {exp.description && <p className="timeline-desc">{exp.description}</p>}
                   {exp.tags.length > 0 && (
                     <div className="tech-tags" style={{ marginTop: 12 }}>
                       {exp.tags.map((tag, j) => (
@@ -729,8 +742,7 @@ export default function AboutPage() {
               {aboutData.projects.map((project, i) => {
                 const accents = ['74, 158, 255', '30, 185, 84', '255, 138, 76', '168, 130, 255'];
                 return (
-                <div key={i} className="project-card" style={{ '--accent': accents[i % accents.length] } as React.CSSProperties}>
-                  <span className="project-index">0{i + 1}</span>
+                <div key={i} className={`project-card${i === 0 ? ' featured' : ''}`} style={{ '--accent': accents[i % accents.length] } as React.CSSProperties}>
                   <p className="project-name">{project.name}</p>
                   <p className="project-desc">{project.description}</p>
                   <div className="tech-tags">

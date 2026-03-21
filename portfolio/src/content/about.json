@@ -13,21 +13,22 @@
   "countriesTravelled": 6,
   "quote": "The best way to predict the future is to invent it.",
   "quoteAuthor": "Alan Kay",
-  "currently": "Incoming Software Engineer at Strada (YC S23)",
+  "currently": "Incoming Software Engineering Intern at Strada (YC S23)",
   "socials": {
     "github": "https://github.com/JustAyushP",
     "linkedin": "https://linkedin.com/in/ayushpatra",
     "email": "ayushkiit1234@gmail.com"
   },
-  "showExperience": false,
+  "showExperience": true,
   "experience": [
     {
       "role": "Software Engineer Intern",
-      "company": "Company Name",
-      "companyUrl": "https://example.com",
-      "date": "May 2026 – Aug 2026",
-      "description": "Describe what you worked on and the impact you made.",
-      "tags": ["React", "TypeScript", "Node.js"]
+      "company": "Strada (YC S23)",
+      "companyUrl": "https://www.getstrada.com",
+      "date": "Summer 2026",
+      "description": "",
+      "tags": [],
+      "incoming": true
     }
   ],
   "showProjects": true,

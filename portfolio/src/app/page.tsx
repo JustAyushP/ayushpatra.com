@@ -123,18 +123,7 @@ export default function Home() {
   }, []);
 
 
-  // Tab title easter egg
-  useEffect(() => {
-    const original = document.title;
-    const handleVisibility = () => {
-      document.title = document.hidden ? "Come back! 👋" : original;
-    };
-    document.addEventListener("visibilitychange", handleVisibility);
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibility);
-      document.title = original;
-    };
-  }, []);
+  
 
   // Cursor glow
   useEffect(() => {
@@ -241,6 +230,31 @@ export default function Home() {
             speed={konamiActive ? 2.0 : 0.5}
           />
         </div>
+
+        {/* Side nav */}
+        <nav className="absolute left-5 top-[50%] -translate-y-1/2 z-10 hidden md:flex flex-col">
+          {[
+            { label: "About", href: "/about" },
+            { label: "Music", href: "/music" },
+            { label: "Gallery", href: "/gallery" },
+            { label: "Travel", href: "/travel" },
+          ].map((link, i, arr) => (
+            <div key={link.href} className="flex flex-col">
+              <button
+                onClick={() => {
+                  setNavigating(true);
+                  setTimeout(() => router.push(link.href), 600);
+                }}
+                className="text-sm text-white/30 hover:text-white/70 transition-colors duration-300 tracking-wide text-left cursor-pointer bg-transparent border-0 p-0 py-1.5"
+              >
+                {link.label}
+              </button>
+              {i < arr.length - 1 && (
+                <div className="w-full h-px bg-white/10 my-1" />
+              )}
+            </div>
+          ))}
+        </nav>
 
         {/* Center content */}
         <div className="relative z-10 flex max-w-5xl flex-col items-center px-6 text-center">
