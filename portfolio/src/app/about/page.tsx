@@ -713,10 +713,7 @@ export default function AboutPage() {
               {aboutData.experience.map((exp, i) => (
                 <div key={i} className="timeline-item">
                   <div className="timeline-dot" />
-                  <p className="timeline-role">
-                    {exp.role}
-                    {exp.incoming && <span className="incoming-badge">Incoming</span>}
-                  </p>
+                  <p className="timeline-role">{exp.role}</p>
                   {exp.companyUrl ? (
                     <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="timeline-company">{exp.company} ↗</a>
                   ) : (
