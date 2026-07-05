@@ -2,46 +2,46 @@
   "spotifyProfileUrl": "https://open.spotify.com/user/m30k4lqkugdktwdbe26t0fle7",
   "blurb": "Music is the soundtrack to everything I do. Whether I'm coding, traveling, or just unwinding — there's always something playing. Here's what I've been listening to lately.",
   "featuredSong": {
-    "name": "dancinwithsomebawdy",
-    "artist": "ericdoa",
-    "albumArt": "https://i.scdn.co/image/ab67616d0000b2731c615ec4f5dd17806a802162",
-    "spotifyUrl": "https://open.spotify.com/track/5v7oj9PosKdE39x9uwDs6C"
+    "name": "HOW DOES IT FEEL?",
+    "artist": "The Kid LAROI",
+    "albumArt": "https://i.scdn.co/image/ab67616d0000b273bb74033e7294aefbe285b391",
+    "spotifyUrl": "https://open.spotify.com/track/4SNPg0KDZ859vauVTaNg7i"
   },
   "topTracks": [
     {
-      "name": "Pyari Amaanat",
-      "artist": "Arpit Bala, A.O.D., Angad Virk",
-      "albumArt": "https://i.scdn.co/image/ab67616d0000b273bc52b9838ebcfae5646a5457",
-      "spotifyUrl": "https://open.spotify.com/track/2W5VC6Rgb8LONHLW8iIYeK"
+      "name": "The Troubles",
+      "artist": "glaive, kurtains",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b273212b26d61d694eb660bb7759",
+      "spotifyUrl": "https://open.spotify.com/track/70X7vgsB5zXDAkurNfaz8X"
     },
     {
-      "name": "Asheville",
-      "artist": "glaive",
-      "albumArt": "https://i.scdn.co/image/ab67616d0000b27394b223f2f8e73e1102b27994",
-      "spotifyUrl": "https://open.spotify.com/track/2ADqYnaKJBkwbaps9pu2k2"
+      "name": "Staring at Me",
+      "artist": "Ali Raza, Shae Gill",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b273ac7a93ab0d584e9b1e5e8320",
+      "spotifyUrl": "https://open.spotify.com/track/0JhUjl5I9K4DSF4DTLmsuS"
     },
     {
-      "name": "Gal Sun",
-      "artist": "Sabat Batin, Rackstar",
-      "albumArt": "https://i.scdn.co/image/ab67616d0000b2736e005f238ab77c3a483b8c4b",
-      "spotifyUrl": "https://open.spotify.com/track/0DCmf7066T5DAjiF8uahv1"
+      "name": "HOT UPTOWN (feat. Drake)",
+      "artist": "Camila Cabello, Drake",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b273422df2f3a633c5ce40275394",
+      "spotifyUrl": "https://open.spotify.com/track/7roN0Nu1FdBk9abw7qIbSG"
     }
   ],
   "topArtists": [
     {
       "name": "glaive",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebbd09e61276a442f8c61f85b4",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebc4bdb0035310b2535bdacfa3",
       "spotifyUrl": "https://open.spotify.com/artist/4cJKDGSv4Dz9QycXYmo565"
     },
     {
-      "name": "Pritam",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca",
-      "spotifyUrl": "https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"
+      "name": "Justin Bieber",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebaf20f7db5288bce9beede034",
+      "spotifyUrl": "https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s"
     },
     {
-      "name": "The Kid LAROI",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb8ae6a1046094624d95b115cb",
-      "spotifyUrl": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
+      "name": "Drake",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+      "spotifyUrl": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     }
   ]
 }
