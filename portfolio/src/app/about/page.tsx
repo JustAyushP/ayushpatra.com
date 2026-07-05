@@ -642,6 +642,7 @@ export default function AboutPage() {
               <div className="flex flex-col gap-2">
                 <a href={aboutData.socials.github} target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">GitHub ↗</a>
                 <a href={aboutData.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">LinkedIn ↗</a>
+                <a href={aboutData.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">Instagram ↗</a>
                 <a href={`mailto:${aboutData.socials.email}`} className="text-sm text-white/70 hover:text-white transition-colors">Email ↗</a>
               </div>
             </div>

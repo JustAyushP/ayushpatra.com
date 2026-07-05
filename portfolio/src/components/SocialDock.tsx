@@ -1,6 +1,7 @@
 import Image from "next/image";
 import githubIcon from "./assets/github.png";
 import linkedinIcon from "./assets/linkedin.png";
+import instagramIcon from "./assets/instagram.png";
 
 export function SocialDock() {
     return (
@@ -31,6 +32,20 @@ export function SocialDock() {
             width={36}
             height={36}
             className="w-9 h-9 object-contain"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/ayushpatra.__/"
+          target="_blank"
+          rel="noreferrer"
+          className="opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <Image
+            src={instagramIcon}
+            alt="Instagram"
+            width={36}
+            height={36}
+            className="w-9 h-9 rounded-full object-cover"
           />
         </a>
       </div>

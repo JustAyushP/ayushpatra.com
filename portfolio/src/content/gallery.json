@@ -1,98 +1,59 @@
-[
+{
+  "intro": "I love taking photos and documenting my life! These are just a few photos that I'm proud of!",
+  "pages": [
     {
-      "id": "sf-01",
-      "src": "https://assets.ayushpatra.com/gallery/sanfrancisco-1.jpeg",
-      "title": "Streets of San Francisco",
-      "date": "2025-08-22",
-      "location": "San Francisco",
-      "tags": ["street"]
+      "slug": "morocco",
+      "name": "Morocco",
+      "blurb": "Medinas, desert light, and my first time in Africa.",
+      "firstRowCount": 4,
+      "photos": [
+        { "id": "morocco-01", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_3345.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] },
+        { "id": "morocco-02", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_3357.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] },
+        { "id": "morocco-07", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_4965.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] },
+        { "id": "morocco-08", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_4966.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] },
+        { "id": "morocco-03", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_3373.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] },
+        { "id": "morocco-04", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_3381.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] },
+        { "id": "morocco-05", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_3404.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] },
+        { "id": "morocco-06", "src": "https://assets.ayushpatra.com/gallery/Morocco/IMG_3417.jpg", "title": "Morocco", "date": "2026-07-04", "location": "Morocco", "tags": ["travel"] }
+      ]
     },
     {
-        "id": "me-01",
-        "src": "https://assets.ayushpatra.com/gallery/me-school-1.JPG",
-        "title": "Me at school",
-        "date": "2024-06-28",
-        "location": "Bhubaneswar",
-        "tags": ["me"]
+      "slug": "spain",
+      "name": "Spain",
+      "blurb": "Warm streets, late sunsets, and too much good food.",
+      "photos": [
+        { "id": "spain-01", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3446.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-02", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3495.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-03", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3582.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-04", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3636.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-05", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3851.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-06", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3929.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-07", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3971.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-08", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_4090.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-09", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3452.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-10", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_3986.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-11", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_4036.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] },
+        { "id": "spain-12", "src": "https://assets.ayushpatra.com/gallery/Spain/IMG_4095.jpg", "title": "Spain", "date": "2026-07-04", "location": "Spain", "tags": ["travel"] }
+      ]
     },
     {
-      "id": "travel-01",
-      "src": "https://assets.ayushpatra.com/gallery/plane-view-1.jpeg",
-      "title": "Travel",
-      "date": "2024-06-13",
-      "location": "Tamil Nadu",
-      "tags": ["travel"]
-    },
-    {
-      "id": "bird-01",
-      "src": "https://assets.ayushpatra.com/gallery/bird.JPG",
-      "title": "Bird",
-      "date": "2024-01-01",
-      "location": "Unknown",
-      "tags": ["nature", "wildlife"]
-    },
-    {
-      "id": "boat-01",
-      "src": "https://assets.ayushpatra.com/gallery/boat.JPG",
-      "title": "Boat",
-      "date": "2024-01-01",
-      "location": "Unknown",
-      "tags": ["travel", "water"]
-    },
-    {
-      "id": "elephant-01",
-      "src": "https://assets.ayushpatra.com/gallery/elephant.JPG",
-      "title": "Elephant",
-      "date": "2024-01-01",
-      "location": "Unknown",
-      "tags": ["wildlife", "nature"]
-    },
-    {
-      "id": "gang-01",
-      "src": "https://assets.ayushpatra.com/gallery/gang.jpg",
-      "title": "Gang",
-      "date": "2024-01-01",
-      "location": "Unknown",
-      "tags": ["people", "friends"]
-    },
-    {
-      "id": "goldengate-01",
-      "src": "https://assets.ayushpatra.com/gallery/goldengate.jpeg",
-      "title": "Golden Gate Bridge",
-      "date": "2024-01-01",
-      "location": "San Francisco",
-      "tags": ["landmark", "san francisco"]
-    },
-    {
-      "id": "salt-01",
-      "src": "https://assets.ayushpatra.com/gallery/salt.jpeg",
-      "title": "Salt",
-      "date": "2024-01-01",
-      "location": "Unknown",
-      "tags": ["nature", "landscape"]
-    },
-    {
-      "id": "sf-home-01",
-      "src": "https://assets.ayushpatra.com/gallery/sf-home.jpeg",
-      "title": "San Francisco Home",
-      "date": "2024-01-01",
-      "location": "San Francisco",
-      "tags": ["san francisco", "home"]
-    },
-    {
-      "id": "toronto-skyline-01",
-      "src": "https://assets.ayushpatra.com/gallery/toronto-skyline.jpeg",
-      "title": "Toronto Skyline",
-      "date": "2024-01-01",
-      "location": "Toronto",
-      "tags": ["city", "skyline", "toronto"]
-    },
-    {
-      "id": "waterloo-carnival-01",
-      "src": "https://assets.ayushpatra.com/gallery/waterloo-carnival.jpeg",
-      "title": "Waterloo Carnival",
-      "date": "2024-01-01",
-      "location": "Waterloo",
-      "tags": ["event", "carnival", "waterloo"]
+      "slug": "snapshots",
+      "name": "Snapshots",
+      "blurb": "Homes, skylines, and moments I keep coming back to.",
+      "photos": [
+        { "id": "sf-01", "src": "https://assets.ayushpatra.com/gallery/sanfrancisco-1.jpeg", "title": "Streets of San Francisco", "date": "2025-08-22", "location": "San Francisco", "tags": ["street"] },
+        { "id": "me-01", "src": "https://assets.ayushpatra.com/gallery/me-school-1.JPG", "title": "Me at school", "date": "2024-06-28", "location": "Bhubaneswar", "tags": ["me"] },
+        { "id": "travel-01", "src": "https://assets.ayushpatra.com/gallery/plane-view-1.jpeg", "title": "Travel", "date": "2024-06-13", "location": "Tamil Nadu", "tags": ["travel"] },
+        { "id": "bird-01", "src": "https://assets.ayushpatra.com/gallery/bird.JPG", "title": "Bird", "date": "2024-01-01", "location": "Unknown", "tags": ["nature", "wildlife"] },
+        { "id": "boat-01", "src": "https://assets.ayushpatra.com/gallery/boat.JPG", "title": "Boat", "date": "2024-01-01", "location": "Unknown", "tags": ["travel", "water"] },
+        { "id": "elephant-01", "src": "https://assets.ayushpatra.com/gallery/elephant.JPG", "title": "Elephant", "date": "2024-01-01", "location": "Unknown", "tags": ["wildlife", "nature"] },
+        { "id": "gang-01", "src": "https://assets.ayushpatra.com/gallery/gang.jpg", "title": "Gang", "date": "2024-01-01", "location": "Unknown", "tags": ["people", "friends"] },
+        { "id": "goldengate-01", "src": "https://assets.ayushpatra.com/gallery/goldengate.jpeg", "title": "Golden Gate Bridge", "date": "2024-01-01", "location": "San Francisco", "tags": ["landmark", "san francisco"] },
+        { "id": "salt-01", "src": "https://assets.ayushpatra.com/gallery/salt.jpeg", "title": "Salt", "date": "2024-01-01", "location": "Unknown", "tags": ["nature", "landscape"] },
+        { "id": "sf-home-01", "src": "https://assets.ayushpatra.com/gallery/sf-home.jpeg", "title": "San Francisco Home", "date": "2024-01-01", "location": "San Francisco", "tags": ["san francisco", "home"] },
+        { "id": "toronto-skyline-01", "src": "https://assets.ayushpatra.com/gallery/toronto-skyline.jpeg", "title": "Toronto Skyline", "date": "2024-01-01", "location": "Toronto", "tags": ["city", "skyline", "toronto"] },
+        { "id": "waterloo-carnival-01", "src": "https://assets.ayushpatra.com/gallery/waterloo-carnival.jpeg", "title": "Waterloo Carnival", "date": "2024-01-01", "location": "Waterloo", "tags": ["event", "carnival", "waterloo"] }
+      ]
     }
   ]
+}
