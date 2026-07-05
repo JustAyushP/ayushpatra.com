@@ -281,6 +281,11 @@ export default function AboutPage() {
           font-size: 0.8rem;
           color: rgba(255, 255, 255, 0.7);
         }
+        .tech-tag-more {
+          background: transparent;
+          border-style: dashed;
+          color: rgba(255, 255, 255, 0.4);
+        }
 
         .hobby-list {
           display: flex;
@@ -569,7 +574,6 @@ export default function AboutPage() {
                 <p className="bento-label">Currently</p>
                 <p className="bento-value">{aboutData.currently}</p>
               </div>
-              <span className="text-3xl mt-2">⚡</span>
             </div>
 
             <div
@@ -583,6 +587,7 @@ export default function AboutPage() {
                 {aboutData.techStack.map((tech, i) => (
                   <span key={i} className="tech-tag">{tech}</span>
                 ))}
+                <span className="tech-tag tech-tag-more">and more</span>
               </div>
             </div>
 
@@ -666,10 +671,7 @@ export default function AboutPage() {
               style={{ ['--tilt-x']: `${cardTilts[9]?.x ?? 0}deg`, ['--tilt-y']: `${cardTilts[9]?.y ?? 0}deg` } as React.CSSProperties}
             >
               <p className="bento-label">Fun Fact</p>
-              <div className="flex items-center gap-2">
-                <span className="text-xl">🤓</span>
-                <p className="bento-value text-sm">{aboutData.funFact}</p>
-              </div>
+              <p className="bento-value text-sm">{aboutData.funFact}</p>
             </div>
 
             <Link
@@ -704,8 +706,8 @@ export default function AboutPage() {
                   ) : (
                     <p className="timeline-company">{exp.company}</p>
                   )}
-                  <p className="timeline-date">{exp.date}</p>
-                  <p className="timeline-desc">{exp.description}</p>
+                  {exp.date && <p className="timeline-date">{exp.date}</p>}
+                  {exp.description && <p className="timeline-desc">{exp.description}</p>}
                   {exp.tags.length > 0 && (
                     <div className="tech-tags" style={{ marginTop: 12 }}>
                       {exp.tags.map((tag, j) => (

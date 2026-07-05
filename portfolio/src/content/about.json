@@ -6,28 +6,29 @@
     "program": "Computer Science",
     "year": "First Year"
   },
-  "location": "Waterloo, ON",
-  "techStack": ["TypeScript", "Python", "C++", "C", "React", "Next.js", "FastAPI", "Flask", "Node.js", "PyTorch", "MongoDB", "Tailwind CSS", "FFmpeg", "Git", "Bash", "Cloudflare"],
+  "location": "San Francisco, CA",
+  "techStack": ["TypeScript", "Python", "C++", "React", "Next.js", "FastAPI", "Node.js", "PyTorch", "PostgreSQL", "Redis", "Drizzle ORM", "Docker", "Temporal", "Playwright", "PostHog", "Infisical", "Twilio", "Vapi"],
   "hobbies": ["Filmmaking", "Photography", "Traveling", "Music", "Coding", "Drums"],
   "funFact": "I can name every country on a blank map.",
-  "countriesTravelled": 6,
+  "countriesTravelled": 8,
   "quote": "The best way to predict the future is to invent it.",
   "quoteAuthor": "Alan Kay",
-  "currently": "Looking for internships for summer 2026",
+  "currently": "Member of Technical Staff @ Strada (YC S23)",
   "socials": {
     "github": "https://github.com/JustAyushP",
     "linkedin": "https://linkedin.com/in/ayushpatra",
-    "email": "ayushkiit1234@gmail.com"
+    "email": "apatra@uwaterloo.ca"
   },
-  "showExperience": false,
+  "showResume": false,
+  "showExperience": true,
   "experience": [
     {
-      "role": "Software Engineer Intern",
-      "company": "Company Name",
-      "companyUrl": "https://example.com",
-      "date": "May 2026 – Aug 2026",
-      "description": "Describe what you worked on and the impact you made.",
-      "tags": ["React", "TypeScript", "Node.js"]
+      "role": "Member of Technical Staff",
+      "company": "Strada",
+      "companyUrl": "https://getstrada.com/",
+      "date": "",
+      "description": "",
+      "tags": ["TypeScript", "React", "Next.js", "Vapi", "Twilio"]
     }
   ],
   "showProjects": true,
